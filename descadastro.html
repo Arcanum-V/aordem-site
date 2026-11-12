@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Parar de receber conteúdo · A ORDEM</title>
+<meta name="robots" content="index,follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>:root{--bg:#0b0b0c;--line:rgba(255,255,255,.10);--ink:#ECE9E3;--muted:#A39F96;--accent:#C9A86A;--ff-body:"Open Sans","Segoe UI",Arial,sans-serif;--ff-head:"Montserrat","Open Sans",Arial,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--ff-body);font-size:18px;line-height:1.8;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+.wrap{width:min(820px,100% - 40px);margin:0 auto}
+header.top{border-bottom:1px solid var(--line)}header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;width:min(1040px,100% - 40px)}
+.brand{font-family:var(--ff-head);font-weight:500;letter-spacing:.42em;font-size:15px;text-transform:uppercase;text-decoration:none;color:var(--ink)}
+header a.volta{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);text-decoration:none}
+main{padding:clamp(48px,8vw,90px) 0}
+.kicker{font-family:var(--ff-head);font-size:12.5px;letter-spacing:.34em;text-transform:uppercase;color:var(--accent)}
+h1{font-family:var(--ff-head);font-weight:300;font-size:clamp(30px,5vw,48px);line-height:1.15;margin:14px 0 8px}
+.ver{color:var(--muted);font-size:15px;margin:0 0 36px}
+h3{font-family:var(--ff-head);font-weight:500;font-size:18px;margin:26px 0 8px;color:var(--accent)}
+h2{font-family:var(--ff-head);font-weight:500;font-size:clamp(19px,2.4vw,24px);margin:44px 0 10px}
+p,li{max-width:70ch}p{margin:0 0 16px}
+ul{margin:0 0 18px;padding-left:22px}li{margin:6px 0;color:var(--ink)}
+.muted{color:var(--muted)}
+.marca{background:rgba(201,168,106,.14);border:1px solid rgba(201,168,106,.45);padding:1px 7px;border-radius:3px;font-size:.92em}
+footer{border-top:1px solid var(--line);padding:36px 0 56px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a{color:var(--muted)}</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><a class="brand" href="/">A Ordem</a><a class="volta" href="/">Voltar ao site</a></div></header>
+<main><div class="wrap">
+<div class="kicker">Documento legal</div>
+<h1>Parar de receber conteúdo</h1>
+<p class="ver">Você decide. Sem burocracia.</p>
+
+<p>Se você se cadastrou na ORDEM e não quer mais receber conteúdo, mensagens ou contatos, informe abaixo o e-mail do cadastro. O pedido vale a partir do envio e você não precisa explicar o motivo.</p>
+<div id="aviso" role="status" style="display:none;border:1px solid rgba(201,168,106,.45);background:rgba(201,168,106,.1);padding:14px 18px;margin:0 0 22px"></div>
+<form method="post" action="https://app.arcanumv.com/public/ordem-descadastro" accept-charset="utf-8" style="max-width:520px">
+<label style="display:block;margin:0 0 6px">E-mail do cadastro</label>
+<input type="email" name="email" required maxlength="160" autocomplete="email" style="width:100%;padding:13px 14px;background:#111;border:1px solid var(--line);color:var(--ink);font:inherit;margin-bottom:18px">
+<label style="display:block;margin:0 0 6px">Motivo (opcional)</label>
+<input type="text" name="motivo" maxlength="300" style="width:100%;padding:13px 14px;background:#111;border:1px solid var(--line);color:var(--ink);font:inherit;margin-bottom:18px">
+<div style="position:absolute;left:-5000px" aria-hidden="true"><input type="text" name="empresa_site" tabindex="-1" autocomplete="off"></div>
+<button type="submit" style="background:transparent;border:1px solid var(--accent);color:var(--accent);padding:13px 26px;letter-spacing:.16em;text-transform:uppercase;font:inherit;font-size:13px;cursor:pointer">Parar de receber</button>
+</form>
+<p class="muted" style="margin-top:26px;font-size:15px">Guardamos só o seu e-mail numa lista de bloqueio, para que você não seja contatado de novo. Para excluir o cadastro inteiro, escreva para <a href="mailto:privacidade@arcanumv.com">privacidade@arcanumv.com</a>. Detalhes na <a href="/privacidade.html">Política de Privacidade</a>.</p>
+<script>
+(function(){var q=new URLSearchParams(location.search),m=document.getElementById("aviso");
+if(q.get("ok")){m.textContent="Pedido registrado. Você não receberá mais conteúdo da ORDEM.";m.style.display="block"}
+else if(q.get("erro")==="dados"){m.textContent="Confira o e-mail informado e tente de novo.";m.style.display="block"}
+else if(q.get("erro")==="limite"){m.textContent="Muitos pedidos em pouco tempo. Tente novamente mais tarde ou escreva para privacidade@arcanumv.com.";m.style.display="block"}})();
+</script>
+
+</div></main>
+<footer><div class="wrap"><div>A ORDEM · G&M SALES, MANAGEMENT, CONSULTING AND TECHNOLOGY LTDA · CNPJ 68.797.757/0001-91</div><div><a href="/privacidade.html">Política de Privacidade</a> &nbsp;·&nbsp; <a href="/termos.html">Termos de Uso</a> &nbsp;·&nbsp; <a href="/descadastro.html">Parar de receber conteúdo</a></div></div></footer>
+</body>
+</html>
