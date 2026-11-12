@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A ORDEM · Formação e Inteligência Operacional</title>
+<meta name="description" content="A ORDEM é uma instituição dedicada à formação de operadores de marketplaces, com especialização em Amazon. Clareza, estrutura e constância.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0b0c;--bg2:#121214;--line:rgba(255,255,255,.10);--ink:#ECE9E3;--muted:#A39F96;--accent:#C9A86A;
+  --ff-body:"Open Sans","Segoe UI",Arial,sans-serif;--ff-head:"Montserrat","Open Sans",Arial,sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--ff-body);font-size:18px;line-height:1.8;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{width:min(960px,100% - 40px);margin:0 auto}
+header.top{position:sticky;top:0;z-index:10;background:rgba(11,11,12,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;width:min(1120px,100% - 40px)}
+.brand{font-family:var(--ff-head);font-weight:500;letter-spacing:.42em;font-size:15px;text-transform:uppercase;text-decoration:none}
+nav a{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);text-decoration:none;margin-left:22px}
+nav a:hover{color:var(--accent)}
+.hero{padding:clamp(80px,13vw,160px) 0 clamp(60px,9vw,110px);border-bottom:1px solid var(--line);background:radial-gradient(900px 420px at 80% -10%,rgba(201,168,106,.10),transparent 60%),linear-gradient(180deg,#0b0b0c,#0e0e10)}
+.kicker{font-family:var(--ff-head);font-size:12.5px;letter-spacing:.34em;text-transform:uppercase;color:var(--accent)}
+h1{font-family:var(--ff-head);font-weight:300;font-size:clamp(38px,7vw,78px);line-height:1.08;letter-spacing:.04em;margin:16px 0 10px}
+.sub{font-family:var(--ff-head);font-weight:400;font-size:clamp(16px,2vw,21px);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 8px}
+.tri{font-family:var(--ff-head);font-weight:500;font-size:13px;letter-spacing:.34em;color:var(--accent);margin:0 0 34px}
+.lead{font-size:clamp(19px,2.2vw,23px);color:var(--ink);max-width:50ch;line-height:1.65;margin:0 0 20px}
+.sign{font-size:17px;color:var(--muted);max-width:52ch;margin:0 0 38px;padding-left:18px;border-left:2px solid var(--accent)}
+.btn{display:inline-block;font-family:var(--ff-head);font-weight:500;font-size:13px;letter-spacing:.22em;text-transform:uppercase;text-decoration:none;color:#0b0b0c;background:var(--accent);padding:16px 30px;border:0;cursor:pointer}
+.btn:hover{background:#d9bb82}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line);margin-left:12px}
+.btn.ghost:hover{border-color:var(--accent);color:var(--accent)}
+section{padding:clamp(56px,8vw,100px) 0;border-bottom:1px solid var(--line)}
+h2{font-family:var(--ff-head);font-weight:300;font-size:clamp(26px,3.6vw,40px);line-height:1.22;margin:12px 0 26px;max-width:26ch}
+h3{font-family:var(--ff-head);font-weight:500;font-size:clamp(19px,2.2vw,24px);line-height:1.3;margin:46px 0 14px}
+h4{font-family:var(--ff-head);font-weight:500;font-size:18px;margin:26px 0 6px}
+p{margin:0 0 18px;max-width:64ch}
+.muted{color:var(--muted)}
+.dest{font-family:var(--ff-head);font-weight:300;font-size:clamp(22px,2.8vw,30px);line-height:1.35;max-width:30ch;margin:34px 0;color:var(--ink)}
+ul.l{margin:0 0 22px;padding:0;list-style:none;max-width:64ch}
+ul.l li{padding:11px 0 11px 22px;border-bottom:1px solid var(--line);position:relative;color:var(--muted)}
+ul.l li::before{content:"";position:absolute;left:0;top:23px;width:8px;height:1px;background:var(--accent)}
+.itens{margin:22px 0 0;border-top:1px solid var(--line)}
+.item{padding:22px 0;border-bottom:1px solid var(--line)}
+.item h4{margin:0 0 6px;color:var(--ink)}
+.item p{margin:0;color:var(--muted)}
+.item b.k{display:block;font-family:var(--ff-head);font-weight:300;color:var(--accent);font-size:13px;letter-spacing:.3em;margin-bottom:6px}
+.pill3{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line);margin:28px 0 0}
+.pill3 div{padding:26px 22px 24px 0;border-right:1px solid var(--line)}
+.pill3 div+div{padding-left:22px}.pill3 div:last-child{border-right:0}
+.pill3 b{display:block;font-family:var(--ff-head);font-weight:500;letter-spacing:.2em;color:var(--accent);font-size:14px;margin-bottom:6px}
+.pill3 span{color:var(--muted);font-size:16px;line-height:1.6;display:block}
+.quote{font-family:var(--ff-head);font-weight:300;font-size:clamp(22px,3vw,32px);line-height:1.4;max-width:30ch;margin:30px 0 0;color:var(--ink)}
+.mrv{display:grid;grid-template-columns:minmax(0,380px) 1fr;gap:clamp(28px,5vw,60px);align-items:start;margin-top:10px}.mrv figure{margin:0;position:sticky;top:96px}.mrv img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:42% 30%;filter:saturate(.9)}.mrv figcaption{margin-top:12px;font-family:var(--ff-head);font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:var(--muted)}.mrv figcaption b{display:block;color:var(--accent);font-weight:500;margin-bottom:2px}@media(max-width:820px){.mrv{grid-template-columns:1fr}.mrv figure{position:static;max-width:380px}}
+.manifesto p{font-size:19px;max-width:56ch}
+.manifesto p.q{font-family:var(--ff-head);font-weight:300;font-size:24px;line-height:1.4;color:var(--ink)}
+form{display:grid;gap:22px;max-width:640px;margin-top:30px}
+label{display:grid;gap:8px;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+input,select,textarea{font:inherit;font-size:17px;letter-spacing:0;text-transform:none;color:var(--ink);background:var(--bg2);border:1px solid var(--line);padding:14px 16px;border-radius:0;width:100%}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--accent)}
+textarea{min-height:130px;resize:vertical}
+.check{display:flex;gap:12px;align-items:flex-start;text-transform:none;letter-spacing:0;font-size:15px;line-height:1.6}
+.check input{width:auto;margin-top:5px}
+.msg{font-size:15px;color:var(--accent);min-height:22px}
+footer{padding:44px 0 60px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:820px){nav{display:none}.pill3{grid-template-columns:1fr}.pill3 div,.pill3 div+div{padding:20px 0;border-right:0;border-bottom:1px solid var(--line)}.btn.ghost{margin:14px 0 0}}
+</style>
+</head>
+<body>
+
+<header class="top"><div class="wrap">
+  <a class="brand" href="#inicio">A Ordem</a>
+  <nav>
+    <a href="#sobre">Sobre</a><a href="#metodologia">Metodologia</a><a href="#formacao">Formação</a><a href="#jornada">Jornada</a><a href="#mrv">Mr. V</a><a href="#faca-parte">Faça parte</a>
+  </nav>
+</div></header>
+
+<main id="inicio">
+
+<div class="hero"><div class="wrap">
+  <div class="kicker">Instituição de formação</div>
+  <h1>A ORDEM</h1>
+  <p class="sub">Formação e Inteligência Operacional</p>
+  <p class="tri">CLAREZA &nbsp;•&nbsp; ESTRUTURA &nbsp;•&nbsp; CONSTÂNCIA</p>
+  <p class="lead">Uma instituição dedicada à formação de operadores de marketplaces, com especialização em Amazon. Desenvolvemos conhecimento, raciocínio estratégico e maturidade operacional para transformar informação em decisões e negócios em operações mais estruturadas.</p>
+  <p class="sign">Não ensinamos apenas a vender. Formamos operadores capazes de compreender, administrar e evoluir seus negócios.</p>
+  <a class="btn" href="#faca-parte">Faça parte da ORDEM</a><a class="btn ghost" href="#sobre">Conhecer a instituição</a>
+</div></div>
+
+<section><div class="wrap">
+  <div class="kicker">Uma nova perspectiva</div>
+  <h2>Uma nova perspectiva sobre a formação de operadores de marketplaces.</h2>
+  <p>O comércio eletrônico abriu oportunidades extraordinárias para empreendedores, marcas e empresas. Entretanto, a facilidade de começar a vender não significa que seja igualmente simples construir uma operação rentável, organizada e sustentável.</p>
+  <p>À medida que um negócio cresce, aumenta também sua complexidade.</p>
+  <p>Publicidade, precificação, concorrência, estoque, capital de giro, logística, rentabilidade, comportamento do consumidor e desempenho comercial passam a exigir decisões cada vez mais conectadas.</p>
+  <p>É nesse cenário que nasce A ORDEM.</p>
+  <p>Uma instituição dedicada à formação de operadores de marketplaces, com especialização inicial na Amazon, fundamentada em três princípios:</p>
+  <div class="pill3">
+    <div><b>CLAREZA</b><span>para compreender.</span></div>
+    <div><b>ESTRUTURA</b><span>para construir.</span></div>
+    <div><b>CONSTÂNCIA</b><span>para evoluir.</span></div>
+  </div>
+  <p style="margin-top:34px">Nossa proposta não é simplesmente ensinar pessoas a vender produtos pela internet.</p>
+  <p>É desenvolver profissionais capazes de compreender o funcionamento de uma operação, interpretar seus indicadores, reconhecer riscos, identificar oportunidades e tomar decisões fundamentadas.</p>
+  <p class="dest">Porque vender é uma atividade.<br>Operar com inteligência é uma competência.</p>
+</div></section>
+
+<!-- ============ SOBRE ============ -->
+<section id="sobre"><div class="wrap">
+  <div class="kicker">Sobre a ORDEM</div>
+  <h2>O que é a ORDEM.</h2>
+  <p>A ORDEM é uma instituição de educação, formação estratégica e desenvolvimento operacional voltada ao universo dos marketplaces.</p>
+  <p>Sua atuação integra conhecimentos técnicos, gestão empresarial, inteligência de mercado, análise de dados, planejamento financeiro e desenvolvimento de competências para a tomada de decisão.</p>
+  <p>Com foco inicial no ecossistema Amazon, a ORDEM foi concebida para atender pessoas em diferentes estágios de maturidade: desde quem está estruturando sua primeira operação até vendedores experientes que precisam reorganizar processos, recuperar rentabilidade ou preparar seus negócios para uma nova etapa de crescimento.</p>
+  <p>A instituição parte de uma premissa fundamental:</p>
+  <p class="dest" style="font-size:22px;max-width:44ch">Uma operação não se torna sustentável apenas porque seu operador conhece as ferramentas disponíveis. Ela se fortalece quando ele compreende como suas decisões afetam o negócio como um todo.</p>
+  <p>Por isso, nossa formação ultrapassa a execução isolada de tarefas.</p>
+  <p>Ensinamos o operador a desenvolver raciocínio estratégico, disciplina operacional, capacidade analítica e visão sistêmica.</p>
+  <p>O objetivo é formar profissionais que saibam não apenas o que fazer, mas também por que fazer, quando agir, quais riscos considerar e como avaliar os resultados de suas decisões.</p>
+
+  <h3>Por que a ORDEM existe</h3>
+  <p class="dest" style="margin-top:0;font-size:24px">O mercado ensina a vender. A ORDEM se propõe a ensinar a operar.</p>
+  <p>Grande parte da educação disponível no comércio eletrônico concentra sua comunicação em técnicas de venda, oportunidades de produtos, campanhas publicitárias e estratégias de crescimento.</p>
+  <p>Esses conhecimentos são importantes, mas representam apenas parte da realidade de uma operação.</p>
+  <p>Um negócio pode aumentar seu faturamento enquanto perde rentabilidade.</p>
+  <p>Pode investir mais em publicidade sem compreender se está gerando retorno econômico.</p>
+  <p>Pode apresentar boas vendas e, simultaneamente, enfrentar riscos de ruptura de estoque, comprometimento de capital ou dependência excessiva de determinados produtos.</p>
+  <p>Pode acompanhar dezenas de indicadores diariamente e, ainda assim, não compreender as causas dos problemas que enfrenta.</p>
+  <p>O desafio não está necessariamente na ausência de informações.</p>
+  <p>Muitas vezes, está na dificuldade de interpretar o volume de informações disponíveis, compreender suas relações e transformá-las em decisões consistentes.</p>
+  <p>Essa condição produz o que chamamos de <b>névoa operacional</b>.</p>
+  <p>O operador acompanha resultados, consulta relatórios, ajusta campanhas e toma decisões, mas nem sempre consegue distinguir sintomas de causas, urgências de prioridades ou crescimento de deterioração.</p>
+  <p>A ORDEM existe para contribuir com a redução dessa névoa.</p>
+  <p>Por meio de educação estruturada, metodologia e desenvolvimento de competências, buscamos transformar informações fragmentadas em compreensão operacional.</p>
+  <p>Nosso compromisso é substituir improvisação por método, decisões isoladas por visão sistêmica e dependência de fórmulas por capacidade de análise.</p>
+
+  <h3>Nosso propósito</h3>
+  <p class="dest" style="margin-top:0;font-size:24px">Desenvolver operadores capazes de construir negócios que não dependam de ilusões para crescer.</p>
+  <p>O propósito da ORDEM é elevar o nível de formação e maturidade dos profissionais que atuam nos marketplaces.</p>
+  <p>Queremos contribuir para que vendedores deixem de atuar exclusivamente de maneira reativa e desenvolvam condições de administrar suas operações com maior consciência, previsibilidade e autonomia.</p>
+  <p>Isso significa formar pessoas capazes de:</p>
+  <ul class="l">
+    <li>Compreender os fundamentos econômicos e operacionais de seus negócios.</li>
+    <li>Interpretar dados e indicadores dentro do contexto real da operação.</li>
+    <li>Reconhecer riscos antes que eles comprometam resultados.</li>
+    <li>Planejar o uso do capital com responsabilidade.</li>
+    <li>Integrar publicidade, estoque, precificação, catálogo e rentabilidade.</li>
+    <li>Identificar oportunidades sem desconsiderar seus custos e consequências.</li>
+    <li>Estabelecer prioridades e executar planos de maneira disciplinada.</li>
+    <li>Desenvolver processos que permitam crescimento com maior controle.</li>
+    <li>Aprender continuamente com resultados, erros e mudanças de mercado.</li>
+  </ul>
+  <p>A ORDEM não pretende eliminar os riscos inerentes ao empreendedorismo.</p>
+  <p>Pretende preparar melhor os operadores para reconhecê-los, administrá-los e tomar decisões diante deles.</p>
+  <p class="dest" style="font-size:22px">Não prometemos operações sem dificuldades. Desenvolvemos competências para enfrentá-las.</p>
+
+  <h3>Missão</h3>
+  <p>Desenvolver operadores de marketplaces por meio de formação estruturada, inteligência operacional e pensamento estratégico, contribuindo para decisões mais conscientes e negócios mais sustentáveis.</p>
+  <h3>Visão</h3>
+  <p>Tornar a ORDEM uma referência reconhecida em formação de alto nível para operadores de marketplaces, especialmente Amazon, pela profundidade do ensino, consistência metodológica e compromisso com a maturidade operacional.</p>
+
+  <h3>Valores</h3>
+  <div class="itens">
+    <div class="item"><h4>Clareza</h4><p>Compreender antes de agir.</p></div>
+    <div class="item"><h4>Estrutura</h4><p>Construir fundamentos antes de expandir.</p></div>
+    <div class="item"><h4>Constância</h4><p>Transformar aprendizado em evolução contínua.</p></div>
+    <div class="item"><h4>Integridade</h4><p>Comunicar possibilidades, riscos e limitações com transparência.</p></div>
+    <div class="item"><h4>Responsabilidade</h4><p>Reconhecer as consequências econômicas e operacionais das decisões.</p></div>
+    <div class="item"><h4>Profundidade</h4><p>Privilegiar compreensão e aplicação em vez de superficialidade.</p></div>
+    <div class="item"><h4>Autonomia</h4><p>Desenvolver profissionais capazes de pensar e decidir com independência.</p></div>
+    <div class="item"><h4>Evolução</h4><p>Manter abertura ao aprendizado, à revisão de métodos e às mudanças do mercado.</p></div>
+  </div>
+
+  <h3>Nosso compromisso com a formação</h3>
+  <p>A ORDEM pretende construir sua reputação não por promessas de resultados financeiros, mas pela qualidade e consistência da formação oferecida.</p>
+  <p>Nossa responsabilidade é desenvolver conteúdos, experiências e metodologias que ajudem o operador a compreender melhor a realidade de seu negócio.</p>
+  <p>Reconhecemos que resultados comerciais dependem de inúmeros fatores, incluindo capital disponível, condições competitivas, capacidade de execução, características dos produtos e mudanças de mercado.</p>
+  <p>Por isso, não tratamos educação como garantia de desempenho.</p>
+  <p>Tratamos educação como desenvolvimento de capacidade.</p>
+  <p>O verdadeiro valor de uma formação está no conhecimento que permanece com o profissional, na qualidade das decisões que ele aprende a tomar e na autonomia que desenvolve ao longo do tempo.</p>
+  <p>Não queremos apenas transmitir respostas. Queremos formar pessoas capazes de formular perguntas melhores, investigar problemas e construir soluções.</p>
+
+  <h3>A ORDEM e o futuro da inteligência operacional</h3>
+  <p class="muted" style="margin-top:-6px">Educação e tecnologia como capacidades complementares.</p>
+  <p>A ORDEM integra uma visão mais ampla de desenvolvimento de inteligência aplicada às operações digitais.</p>
+  <p>Essa visão reconhece que a complexidade dos marketplaces não pode ser enfrentada exclusivamente com esforço manual ou ferramentas desconectadas.</p>
+  <p>Ao mesmo tempo, reconhece que tecnologia sem compreensão pode ampliar a dependência do operador em vez de desenvolver sua autonomia.</p>
+  <p>Por isso, a formação humana permanece essencial.</p>
+  <p>A ORDEM concentra sua missão no desenvolvimento de conhecimento, raciocínio, critérios e maturidade operacional.</p>
+  <p>Dentro dessa visão também se encontra o ARCANUM, um sistema de inteligência operacional concebido para apoiar a interpretação de dados, a identificação de riscos e oportunidades e a construção de direcionamentos estratégicos para operações Amazon.</p>
+  <p>Os dois projetos possuem papéis complementares.</p>
+  <p>A ORDEM desenvolve a inteligência do operador.</p>
+  <p>O ARCANUM foi concebido para ampliar sua capacidade de análise operacional por meio da tecnologia.</p>
+  <p>Essa complementaridade não substitui o julgamento humano nem elimina a necessidade de validar informações e decisões.</p>
+  <p>Ela representa uma direção de desenvolvimento: aproximar educação de alto nível, inteligência aplicada e responsabilidade operacional.</p>
+  <p class="muted">A disponibilidade de funcionalidades, integrações e serviços tecnológicos dependerá de suas respectivas etapas de desenvolvimento e validação.</p>
+</div></section>
+
+<!-- ============ METODOLOGIA ============ -->
+<section id="metodologia"><div class="wrap">
+  <div class="kicker">Nossa metodologia</div>
+  <h2>Nossa filosofia.</h2>
+  <p class="tri" style="margin-bottom:22px">CLAREZA &nbsp;•&nbsp; ESTRUTURA &nbsp;•&nbsp; CONSTÂNCIA</p>
+  <p>Esses três princípios representam a base da formação proposta pela ORDEM.</p>
+
+  <h3>CLAREZA <span class="muted" style="font-weight:300">— Compreender antes de decidir</span></h3>
+  <p>Clareza é a capacidade de enxergar a operação além dos números apresentados em uma tela.</p>
+  <p>É compreender o significado dos indicadores, reconhecer relações entre diferentes áreas do negócio e distinguir o que realmente exige atenção.</p>
+  <p>Um operador com clareza não observa apenas que suas vendas diminuíram.</p>
+  <p>Ele investiga o que pode ter provocado essa mudança.</p>
+  <p>Não interpreta uma campanha publicitária apenas por seu volume de vendas.</p>
+  <p>Avalia custos, conversão, margem, contexto competitivo e impacto econômico.</p>
+  <p>A clareza transforma informação em entendimento.</p>
+  <p class="dest" style="font-size:20px;margin:6px 0 0">Sem clareza, decisões se tornam reações.</p>
+
+  <h3>ESTRUTURA <span class="muted" style="font-weight:300">— Construir fundamentos para sustentar o crescimento</span></h3>
+  <p>Estrutura significa organizar processos, recursos, responsabilidades e decisões.</p>
+  <p>Uma operação estruturada não depende exclusivamente da memória, da intuição ou da disponibilidade constante de seu responsável.</p>
+  <p>Ela possui critérios, rotinas, indicadores, mecanismos de acompanhamento e procedimentos que tornam a gestão mais consistente.</p>
+  <p>Na ORDEM, estrutura não significa burocracia.</p>
+  <p>Significa criar condições para que o operador saiba onde está, quais recursos possui, o que precisa fazer e como avaliar sua evolução.</p>
+  <p class="dest" style="font-size:20px;margin:6px 0 0">Sem estrutura, o crescimento pode ampliar fragilidades que já existiam.</p>
+
+  <h3>CONSTÂNCIA <span class="muted" style="font-weight:300">— Evoluir por meio de disciplina e aprendizado</span></h3>
+  <p>Constância não é repetir indefinidamente as mesmas ações.</p>
+  <p>É manter disciplina para observar, interpretar, executar, avaliar e corrigir.</p>
+  <p>Os marketplaces são ambientes dinâmicos.</p>
+  <p>Concorrentes mudam estratégias. Custos variam. O comportamento dos consumidores evolui. Plataformas alteram regras, ferramentas e mecanismos de funcionamento.</p>
+  <p>Por isso, uma operação saudável exige aprendizado contínuo.</p>
+  <p>Constância é a capacidade de sustentar um processo de evolução mesmo diante de mudanças e dificuldades.</p>
+  <p class="dest" style="font-size:20px;margin:6px 0 0">Sem constância, conhecimento não se transforma em maturidade.</p>
+
+  <h3>Nossa visão de ensino</h3>
+  <p class="dest" style="margin-top:0;font-size:24px">Formação de alto nível exige profundidade, aplicação e pensamento crítico.</p>
+  <p>A ORDEM foi concebida para desenvolver uma experiência educacional que ultrapasse a simples transmissão de informações.</p>
+  <p>Nosso modelo de formação busca integrar cinco dimensões fundamentais.</p>
+  <div class="itens">
+    <div class="item"><b class="k">01</b><h4>Conhecimento técnico</h4><p>Compreensão das ferramentas, funcionalidades, regras e mecanismos operacionais dos marketplaces.</p></div>
+    <div class="item"><b class="k">02</b><h4>Inteligência analítica</h4><p>Capacidade de interpretar relatórios, indicadores, tendências e relações entre diferentes variáveis do negócio.</p></div>
+    <div class="item"><b class="k">03</b><h4>Raciocínio estratégico</h4><p>Desenvolvimento de critérios para estabelecer prioridades, comparar alternativas e compreender as consequências das decisões.</p></div>
+    <div class="item"><b class="k">04</b><h4>Aplicação operacional</h4><p>Transformação do conhecimento em processos, rotinas, planos de ação e práticas verificáveis.</p></div>
+    <div class="item"><b class="k">05</b><h4>Evolução profissional</h4><p>Desenvolvimento progressivo de autonomia, responsabilidade, disciplina e maturidade na condução da operação.</p></div>
+  </div>
+  <p style="margin-top:26px">Nosso objetivo não é formar profissionais que apenas reproduzam procedimentos.</p>
+  <p>É formar operadores capazes de compreender problemas novos e construir respostas fundamentadas.</p>
+  <p>Acreditamos que o ensino de alto nível não se define pela complexidade da linguagem ou pela quantidade de conteúdo oferecido.</p>
+  <p>Ele se define pela profundidade da compreensão, pela qualidade da aplicação e pela capacidade de desenvolver competências duradouras.</p>
+
+  <h3>O que significa ser um operador</h3>
+  <p class="dest" style="margin-top:0;font-size:24px">Existe uma diferença entre vender em um marketplace e administrar uma operação.</p>
+  <p>O vendedor concentra sua atenção na comercialização de produtos.</p>
+  <p>O operador compreende que cada venda faz parte de um sistema econômico e operacional mais amplo.</p>
+  <p>Ele precisa considerar não apenas o volume vendido, mas também os recursos utilizados para produzir aquele resultado.</p>
+  <p>Precisa compreender como publicidade, conversão, margem, estoque, logística, capital e concorrência se influenciam.</p>
+  <p>Precisa reconhecer que decisões aparentemente positivas em uma área podem produzir consequências negativas em outra.</p>
+  <p>Um operador preparado desenvolve condições de responder perguntas essenciais:</p>
+  <ul class="l">
+    <li>Minha operação está realmente gerando valor?</li>
+    <li>Quais produtos sustentam minha rentabilidade?</li>
+    <li>Onde estou comprometendo capital sem retorno adequado?</li>
+    <li>Quais problemas são sintomas e quais podem representar causas?</li>
+    <li>O que precisa ser protegido, corrigido, testado ou expandido?</li>
+    <li>Quais decisões exigem atenção imediata?</li>
+    <li>Minha estrutura atual suporta uma nova etapa de crescimento?</li>
+  </ul>
+  <p>Essa capacidade de interpretação é o que diferencia o acompanhamento de indicadores da gestão efetiva de uma operação.</p>
+  <p>A ORDEM forma operadores porque acredita que o futuro dos marketplaces exigirá mais do que habilidade para vender. Exigirá capacidade para administrar complexidade.</p>
+
+  <h3>Nosso diferencial</h3>
+  <p class="dest" style="margin-top:0;font-size:24px">Não ensinamos apenas ferramentas. Desenvolvemos capacidade de decisão.</p>
+  <p>O diferencial que a ORDEM pretende construir está na integração entre conhecimento técnico, experiência operacional, inteligência analítica e desenvolvimento de maturidade.</p>
+  <p>Nossa abordagem se fundamenta em princípios claros.</p>
+  <div class="itens">
+    <div class="item"><h4>Visão sistêmica</h4><p>Compreender a operação como um conjunto de variáveis conectadas.</p></div>
+    <div class="item"><h4>Causalidade</h4><p>Investigar relações e possíveis causas, sem confundir correlação com explicação comprovada.</p></div>
+    <div class="item"><h4>Aplicação prática</h4><p>Conectar conceitos a problemas e decisões encontrados no cotidiano dos marketplaces.</p></div>
+    <div class="item"><h4>Responsabilidade econômica</h4><p>Considerar custos, capital, rentabilidade e riscos em cada etapa do crescimento.</p></div>
+    <div class="item"><h4>Pensamento crítico</h4><p>Desenvolver autonomia para questionar recomendações e avaliar alternativas.</p></div>
+    <div class="item"><h4>Evolução contínua</h4><p>Compreender que a formação de um operador não termina com o domínio de uma ferramenta.</p></div>
+  </div>
+  <p style="margin-top:26px">Não acreditamos que a qualidade da educação deva ser medida por promessas extraordinárias.</p>
+  <p>Acreditamos que ela deve ser demonstrada pela consistência da metodologia, pela profundidade do conteúdo e pela capacidade de desenvolver competências aplicáveis.</p>
+  <p>A ORDEM não pretende criar dependência de respostas prontas. Pretende desenvolver autonomia para tomar decisões melhores.</p>
+</div></section>
+
+<!-- ============ FORMAÇÃO ============ -->
+<section id="formacao"><div class="wrap">
+  <div class="kicker">Áreas de formação</div>
+  <h2>Nossa especialização: Amazon.</h2>
+  <p class="muted" style="margin-top:-6px">Formação aprofundada para um dos ecossistemas mais exigentes do comércio eletrônico.</p>
+  <p>A Amazon reúne oportunidades relevantes para empreendedores e empresas, mas também apresenta desafios operacionais que exigem conhecimento especializado.</p>
+  <p>A gestão de uma conta envolve múltiplas dimensões que precisam funcionar de maneira coordenada.</p>
+  <p>Entre os principais campos de formação da ORDEM estão:</p>
+  <div class="itens">
+    <div class="item"><h4>Fundamentos e arquitetura da operação Amazon</h4><p>Compreensão do ecossistema, modelos de operação, organização de contas, políticas, responsabilidades e fundamentos da atividade comercial.</p></div>
+    <div class="item"><h4>Catálogo, listings e apresentação de produtos</h4><p>Estruturação de anúncios, qualidade das informações, atributos, imagens, conteúdo comercial e elementos que influenciam a experiência de compra.</p></div>
+    <div class="item"><h4>Publicidade e Amazon Ads</h4><p>Planejamento publicitário, campanhas, segmentações, interpretação de métricas, eficiência dos investimentos e relação entre publicidade e resultado econômico.</p></div>
+    <div class="item"><h4>Rentabilidade e gestão financeira</h4><p>Análise de custos, taxas, margens, fluxo de caixa, capital de giro, ponto de equilíbrio e viabilidade econômica dos produtos.</p></div>
+    <div class="item"><h4>Estoque, logística e disponibilidade</h4><p>Planejamento de reposição, controle de cobertura, prevenção de rupturas, análise de imobilização de capital e avaliação das alternativas logísticas.</p></div>
+    <div class="item"><h4>Inteligência competitiva e precificação</h4><p>Leitura de mercado, posicionamento competitivo, análise de preços, diferenciação e compreensão dos fatores que influenciam a competitividade.</p></div>
+    <div class="item"><h4>Diagnóstico e gestão de desempenho</h4><p>Interpretação integrada de indicadores, identificação de riscos, análise de causas e estabelecimento de prioridades operacionais.</p></div>
+    <div class="item"><h4>Planejamento e evolução da operação</h4><p>Desenvolvimento de processos, rotinas de acompanhamento, planos de melhoria e preparação para diferentes estágios de crescimento.</p></div>
+  </div>
+  <p style="margin-top:26px">Nossa abordagem considera que esses conhecimentos não devem ser tratados como disciplinas completamente independentes.</p>
+  <p>A publicidade influencia a rentabilidade. A disponibilidade de estoque afeta as vendas. A precificação altera a competitividade. E cada decisão pode modificar o equilíbrio do negócio.</p>
+  <p>Formar um operador Amazon significa prepará-lo para compreender essas relações.</p>
+</div></section>
+
+<!-- ============ JORNADA ============ -->
+<section id="jornada"><div class="wrap">
+  <div class="kicker">Jornada do operador</div>
+  <h2>Uma jornada de maturidade operacional.</h2>
+  <p class="muted" style="margin-top:-6px">Cada operação possui um estágio. Cada estágio exige decisões diferentes.</p>
+  <p>A ORDEM reconhece que não existe uma estratégia universal adequada para todos os vendedores.</p>
+  <p>Um profissional que está validando seus primeiros produtos enfrenta desafios diferentes daqueles encontrados por uma operação consolidada.</p>
+  <p>Da mesma forma, uma empresa que busca recuperar rentabilidade possui prioridades distintas de outra que pretende expandir seu catálogo ou desenvolver uma marca própria.</p>
+  <p>Por isso, nossa visão educacional considera diferentes estágios de evolução:</p>
+  <div class="itens">
+    <div class="item"><b class="k">VALIDAÇÃO</b><p>Compreender fundamentos, testar hipóteses e avaliar viabilidade.</p></div>
+    <div class="item"><b class="k">ESTABILIDADE</b><p>Desenvolver processos, controlar riscos e buscar consistência operacional.</p></div>
+    <div class="item"><b class="k">ESCALA CONTROLADA</b><p>Ampliar resultados respeitando limites financeiros, logísticos e estruturais.</p></div>
+    <div class="item"><b class="k">EXPANSÃO</b><p>Desenvolver novas oportunidades, produtos e capacidades operacionais.</p></div>
+    <div class="item"><b class="k">MARCA PRÓPRIA</b><p>Aprofundar diferenciação, posicionamento, identidade e gestão de portfólio.</p></div>
+    <div class="item"><b class="k">DEFESA DE MARCA</b><p>Fortalecer competitividade, reputação e proteção dos ativos comerciais.</p></div>
+    <div class="item"><b class="k">DIVERSIFICAÇÃO</b><p>Reduzir dependências e avaliar novas frentes de crescimento.</p></div>
+    <div class="item"><b class="k">INTERNACIONALIZAÇÃO</b><p>Preparar capacidades e conhecimentos necessários para avaliar operações em outros mercados.</p></div>
+  </div>
+  <p style="margin-top:26px">Esses estágios não representam uma sequência obrigatória ou uma promessa de evolução automática.</p>
+  <p>São referências para compreender necessidades, competências e prioridades.</p>
+  <p>O ensino precisa respeitar o momento real do operador, não apenas suas ambições de crescimento.</p>
+
+  <h3>Para quem é a ORDEM</h3>
+  <p>A ORDEM foi concebida para pessoas que desejam desenvolver uma relação mais profissional e estruturada com o comércio eletrônico.</p>
+  <div class="itens">
+    <div class="item"><h4>Para quem está começando</h4><p>E deseja construir fundamentos sólidos antes de comprometer recursos em decisões que ainda não compreende.</p></div>
+    <div class="item"><h4>Para quem já vende, mas enfrenta dificuldades</h4><p>E precisa melhorar sua capacidade de diagnóstico, organização, planejamento e gestão.</p></div>
+    <div class="item"><h4>Para operadores em crescimento</h4><p>Que precisam desenvolver processos, controlar capital, interpretar indicadores e preparar sua estrutura para novas responsabilidades.</p></div>
+    <div class="item"><h4>Para profissionais e gestores de e-commerce</h4><p>Que desejam aprofundar conhecimentos técnicos e estratégicos sobre marketplaces, especialmente Amazon.</p></div>
+    <div class="item"><h4>Para empreendedores que buscam maturidade</h4><p>E compreendem que crescimento sustentável exige mais do que encontrar produtos ou aumentar investimentos publicitários.</p></div>
+  </div>
+  <p style="margin-top:26px">A ORDEM não foi concebida para quem procura garantias de faturamento, resultados imediatos ou fórmulas que dispensem estudo e execução.</p>
+  <p>Nossa proposta é direcionada a quem reconhece o valor do conhecimento, da disciplina e do desenvolvimento contínuo.</p>
+</div></section>
+
+<!-- ============ MR. V ============ -->
+<section id="mrv"><div class="wrap">
+  <div class="kicker">O fundador</div>
+  <h2>Mr. V, Arquiteto da Operação.</h2>
+  <p class="muted" style="margin-top:-6px">A experiência por trás da visão.</p>
+  <div class="mrv"><figure><img src="mrv.jpg" alt="Mr. V, Arquiteto da Operação" onerror="this.closest('figure').style.display='none'"><figcaption><b>Mr. V</b>Arquiteto da Operação</figcaption></figure><div>
+  <p>A ORDEM nasce da trajetória de seu fundador, conhecido como Mr. V.</p>
+  <p>Sua experiência profissional começou muito antes do comércio eletrônico, em uma carreira ligada à indústria do petróleo, com atuação nas maiores companhias petrolíferas do mundo, formação internacional nos Estados Unidos, Inglaterra e Canadá e vivências profissionais em diferentes países.</p>
+  <p>Posteriormente, decidiu explorar novos caminhos no empreendedorismo digital.</p>
+  <p>Passou pelo marketing digital, dropshipping e Mercado Livre, até direcionar sua atuação ao ecossistema Amazon.</p>
+  <p>Ao longo de mais de cinco anos de experiências no ambiente digital, desenvolveu uma compreensão prática dos desafios enfrentados por quem constrói e administra negócios em marketplaces.</p>
+  <p>Sua trajetória reúne experiências profissionais, aprendizado técnico, decisões empreendedoras, conquistas e dificuldades operacionais.</p>
+  <p>Foi dessa combinação que surgiu uma convicção:</p>
+  <p class="dest" style="font-size:22px;max-width:40ch">O conhecimento necessário para construir uma operação sustentável vai muito além das técnicas utilizadas para gerar vendas.</p>
+  <p>A identidade do Arquiteto da Operação representa essa maneira de compreender os negócios: observar estruturas, reconhecer relações, identificar fragilidades e desenvolver caminhos de evolução.</p>
+  <p>O Mr. V não representa uma promessa de sucesso sem dificuldades.</p>
+  <p>Representa o compromisso de compartilhar conhecimento, experiência e uma visão operacional construída a partir da realidade.</p>
+  <p>Sua filosofia pode ser resumida em uma declaração:</p>
+  <p class="quote">“Eu não vendo ilusões. Eu revelo o caminho para operações que não quebram.”</p>
+  <p style="margin-top:22px">Essa frase expressa um compromisso com o ensino responsável, a transparência e a preparação de operadores para enfrentar os desafios reais do mercado.</p>
+  </div></div>
+</div></section>
+
+<!-- ============ MANIFESTO ============ -->
+<section id="manifesto"><div class="wrap manifesto">
+  <div class="kicker">Manifesto da ORDEM</div>
+  <h2>O mercado não precisa de mais promessas. Precisa de operadores preparados.</h2>
+  <p>Existe uma diferença entre começar a vender e aprender a administrar um negócio.</p>
+  <p>Entre acompanhar números e compreender o que eles significam.</p>
+  <p>Entre executar tarefas e tomar decisões.</p>
+  <p>Entre crescer e construir condições para sustentar o crescimento.</p>
+  <p>O comércio eletrônico oferece oportunidades, mas não elimina a complexidade de empreender.</p>
+  <p>Por trás de cada produto existem custos.</p>
+  <p>Por trás de cada campanha existem investimentos.</p>
+  <p>Por trás de cada decisão existem consequências.</p>
+  <p>E por trás de uma operação sustentável precisa existir alguém preparado para compreender tudo isso.</p>
+  <p>Acreditamos no conhecimento que desenvolve autonomia.</p>
+  <p>Na disciplina que transforma intenção em execução.</p>
+  <p>Na inteligência que conecta informações e revela prioridades.</p>
+  <p>Na estrutura que permite crescer com responsabilidade.</p>
+  <p>Não acreditamos em atalhos universais.</p>
+  <p>Não confundimos faturamento com sucesso.</p>
+  <p>Não transformamos exceções em promessas.</p>
+  <p>E não reduzimos a formação de um operador a uma sequência de ferramentas e técnicas.</p>
+  <p>Acreditamos que negócios mais sólidos começam com profissionais mais preparados.</p>
+  <p>Que a clareza antecede a decisão.</p>
+  <p>Que a estrutura sustenta a evolução.</p>
+  <p>E que a constância transforma aprendizado em maturidade.</p>
+  <p>A ORDEM não existe apenas para ensinar a vender.</p>
+  <p class="q">Existe para formar quem compreende o que está construindo.</p>
+  <p class="tri" style="margin-top:30px">A ORDEM &nbsp;•&nbsp; CLAREZA &nbsp;•&nbsp; ESTRUTURA &nbsp;•&nbsp; CONSTÂNCIA</p>
+</div></section>
+
+<!-- ============ FAÇA PARTE ============ -->
+<section id="faca-parte"><div class="wrap">
+  <div class="kicker">Faça parte da ORDEM</div>
+  <h2>Sua próxima evolução começa pela maneira como você compreende sua operação.</h2>
+  <p>Se você deseja ultrapassar o aprendizado de técnicas isoladas e desenvolver uma visão mais completa sobre a gestão de marketplaces, conheça a proposta da ORDEM.</p>
+  <p>Uma formação orientada por fundamentos, inteligência operacional, aplicação prática e desenvolvimento contínuo.</p>
+  <p>Porque o objetivo não é apenas vender mais.</p>
+  <p>É aprender a construir, administrar e evoluir com consciência.</p>
+
+  <form id="form" method="post" action="https://app.arcanumv.com/public/ordem-interesse" accept-charset="utf-8">
+    <div style="position:absolute;left:-9999px;height:0;overflow:hidden" aria-hidden="true"><label>Não preencha este campo<input name="empresa_site" tabindex="-1" autocomplete="off"></label></div>
+    <label>Nome completo<input name="nome" autocomplete="name" required></label>
+    <label>E-mail<input name="email" type="email" autocomplete="email" required></label>
+    <label>WhatsApp com DDD<input name="whatsapp" type="tel" autocomplete="tel" required></label>
+    <label>Você vende na Amazon hoje?
+      <select name="vende" required>
+        <option value="">Selecione</option>
+        <option>Sim, já vendo</option>
+        <option>Ainda estou começando</option>
+        <option>Ainda não vendo</option>
+      </select>
+    </label>
+    <label>Conte um pouco sobre o seu momento<textarea name="momento"></textarea></label>
+    <label class="check"><input type="checkbox" name="aceite" required><span>Autorizo o uso destes dados para registrar o meu interesse e entrar em contato comigo.</span></label>
+    <div><button class="btn" type="submit">Registrar interesse</button></div>
+    <div class="msg" id="msg" role="status"></div>
+  </form>
+</div></section>
+
+</main>
+
+<footer><div class="wrap">
+  <div>A ORDEM · Formação e Inteligência Operacional</div>
+  <div>CLAREZA • ESTRUTURA • CONSTÂNCIA</div>
+</div></footer>
+
+<script>
+(function(){var q=new URLSearchParams(location.search),m=document.getElementById("msg");if(!m)return;
+if(q.get("enviado")==="1")m.textContent="Recebemos o seu interesse. Entraremos em contato pelos dados que você informou.";
+else if(q.get("erro")==="dados")m.textContent="Confira os campos: nome, e-mail, WhatsApp com DDD e a autorização são obrigatórios.";
+else if(q.get("erro")==="limite")m.textContent="Muitos envios deste endereço. Tente novamente mais tarde.";})();
+</script>
+</body>
+</html>
